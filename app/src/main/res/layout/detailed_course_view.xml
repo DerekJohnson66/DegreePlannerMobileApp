@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/d_course_view_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            app:layout_anchor="@id/d_course_view_recycler_view"
+            app:layout_anchorGravity="center"
+            tools:listitem="@layout/assessment_item" />
+
+        <TextView
+            android:id="@+id/d_course_view_title"
+            android:layout_width="250dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="Title"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/d_course_view_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Start Date"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            />
+
+        <TextView
+            android:id="@+id/d_course_view_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/d_course_view_status"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="Status"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/d_course_view_mentor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Mentor Name"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            />
+
+        <TextView
+            android:id="@+id/d_course_view_mentor_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentor Phone"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/d_course_view_mentor_email"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="Mentor Email"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/d_course_view_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:width="200dp"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center_horizontal"
+                android:hint="Write a note"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/d_course_view_save_note_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="15dp"
+                android:text="Add Note" />
+        </GridLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/d_course_view_recycler_view_notes"
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            app:layout_anchor="@id/d_course_view_recycler_view_notes"
+            app:layout_anchorGravity="center"
+            tools:listitem="@layout/note_item" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/d_course_view_add_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Add Assessment"
+                android:layout_gravity="end"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:id="@+id/d_course_view_update_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Update Course"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"/>
+
+
+
+
+
+        </GridLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/add_term_title"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:inputType="text"
+            android:layout_margin="15dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:background="@drawable/edit_text_border"/>
+
+
+            <EditText
+                android:id="@+id/add_term_full_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@null"
+                />
+
+
+
+            <Button
+                android:id="@+id/add_term_pick_start_date_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick Start Date"
+                android:layout_margin="15dp"
+
+                />
+
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/add_term_start_date_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                 />
+
+            <EditText
+                android:id="@+id/add_term_start_date_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                 />
+
+            <EditText
+                android:id="@+id/add_term_start_date_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                />
+        </GridLayout>
+
+
+            <EditText
+                android:id="@+id/add_term_full_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@null"
+                 />
+
+        <Button
+            android:id="@+id/add_term_pick_end_date_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick End Date"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/add_term_end_date_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                />
+
+            <EditText
+                android:id="@+id/add_term_end_date_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                />
+
+            <EditText
+                android:id="@+id/add_term_end_date_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                 />
+        </GridLayout>
+
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/add_term_save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="15dp"
+                android:text="Save"
+                 />
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

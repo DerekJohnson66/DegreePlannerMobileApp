@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/text_view_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="06/05/2017"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/text_view_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/text_view_start_date"
+            android:text="12/30/2017"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_alignParentRight="true" />
+
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text=" Term 1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@id/text_view_start_date"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@id/text_view_start_date" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

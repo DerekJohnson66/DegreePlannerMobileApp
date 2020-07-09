@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DetailedTermViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/d_term_view_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="418dp"
+            app:layout_anchor="@id/d_term_view_recycler_view"
+            app:layout_anchorGravity="center"
+            tools:listitem="@layout/course_item" />
+
+
+        <TextView
+            android:id="@+id/d_term_view_title"
+            android:layout_width="250dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="Title"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/d_term_view_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Start Date"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+             />
+
+        <TextView
+            android:id="@+id/d_term_view_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:textSize="20sp"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/d_term_view_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_gravity="left"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:id="@+id/term_view_add_course_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="15dp"
+                android:text="Add Course" />
+
+            <Button
+                android:id="@+id/term_view_edit_term_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text="Edit Term"
+                />
+        </GridLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
